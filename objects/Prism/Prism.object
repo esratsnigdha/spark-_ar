@@ -1,0 +1,84 @@
+{
+  "modelName": "master3_d_object_model",
+  "name": "Prism",
+  "identifier": "master3_d_object_model:3637-582b60df-f548-47e3-9ca0-113ce06c59ae",
+  "sourceIdentifier": "asset_collection_model:3641-582b60df-f548-47e3-9ca0-113ce06c59ae",
+  "animationMask": {
+    "position": false,
+    "rotation": false,
+    "scale": false
+  },
+  "cameraVisibility": "back|front",
+  "depth": 0.021650634706020355,
+  "globalScaleFactor": 1,
+  "height": 0.04999999701976776,
+  "hidden": false,
+  "layerIdentifier": "layer0",
+  "outputVisibility": "preview|capture",
+  "physicsEnabled": false,
+  "tags": [],
+  "transform": {
+    "rx": 0,
+    "ry": 0,
+    "rz": 0,
+    "sx": 1,
+    "sy": 1,
+    "sz": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "width": 0.02499999850988388,
+  "children": [
+    {
+      "modelName": "mesh",
+      "name": "Prism",
+      "identifier": "mesh:3627-582b60df-f548-47e3-9ca0-113ce06c59ae",
+      "animationMask": {
+        "position": false,
+        "rotation": false,
+        "scale": false
+      },
+      "cameraVisibility": "back|front",
+      "castShadow": false,
+      "hidden": false,
+      "layerIdentifier": "layer0",
+      "nodeName": "Prism",
+      "numberOfFaces": 8,
+      "outputVisibility": "preview|capture",
+      "physicsEnabled": false,
+      "prefabIdentifier": "gltf:3631-582b60df-f548-47e3-9ca0-113ce06c59ae",
+      "receiveShadow": false,
+      "renderPass": "main_scene",
+      "tags": [],
+      "transform": {
+        "rx": 0,
+        "ry": 0,
+        "rz": 0,
+        "sx": 1,
+        "sy": 1,
+        "sz": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "useEmbeddedBlendshapes": false,
+      "children": [
+        {
+          "modelName": "surfaces",
+          "identifier": "surfaces:3629-582b60df-f548-47e3-9ca0-113ce06c59ae",
+          "children": [
+            {
+              "modelName": "surface",
+              "name": "surface0",
+              "identifier": "surface:3634-582b60df-f548-47e3-9ca0-113ce06c59ae",
+              "isMaterialIdentifierEnabled": true,
+              "materialIdentifier": "dependent_metallic_roughness_p_b_r_material_model:3625-582b60df-f548-47e3-9ca0-113ce06c59ae",
+              "surfaceGroupIdentifier": "3635-582b60df-f548-47e3-9ca0-113ce06c59ae"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
