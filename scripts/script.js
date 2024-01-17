@@ -5,24 +5,28 @@ const Reactive = require('Reactive');
 
 (async function (){
 
-  //Find the objects first
+  // Loading the first material 'PrismRight'.
   const prism = await Scene.root.findFirst('PrismRight');
+
+   // Loading the second material 'PrismLeft'.
   const prism2 = await Scene.root.findFirst('PrismLeft');
+
+   // Loading the third material 'Handpainted watercolor cake'.
   const cake = await Scene.root.findFirst('Handpainted watercolor cake');
 
-  //Creat a reference of the face
+  // Loading the face material.
   const face = FaceTracking.face(0);
 
-  //Here bind rotation signal
-  //while user rotate face objects will rotate with face
+  // Here binding the rotation signal
+  // While user moves face objects will moves with the face
   prism.transform.rotation = face.cameraTransform.rotation;
   prism2.transform.rotation = face.cameraTransform.rotation;
   cake.transform.rotation = face.cameraTransform.rotation;
 
-  //Map the mouth openness value to certain range
+  // Map the mouth openness value to certain range.
   const mouthOpenness = face.mouth.openness.toRange(1.1, 2.5);
 
-  //Bind the mouth signal to objets
+  // Binding the mouth signal to objets.
   prism.transform.scale = Reactive.point(mouthOpenness, mouthOpenness, mouthOpenness);
   prism2.transform.scale = Reactive.point(mouthOpenness, mouthOpenness, mouthOpenness);
   cake.transform.scale = Reactive.point(mouthOpenness, mouthOpenness, mouthOpenness);
