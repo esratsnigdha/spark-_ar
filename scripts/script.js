@@ -19,7 +19,7 @@ const Reactive = require('Reactive');
   prism2.transform.rotation = face.cameraTransform.rotation;
   cake.transform.rotation = face.cameraTransform.rotation;
 
-  //Map the mouth openness value to certaine range
+  //Map the mouth openness value to certain range
   const mouthOpenness = face.mouth.openness.toRange(1.1, 2.5);
 
   //Bind the mouth signal to objets
